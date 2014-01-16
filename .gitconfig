@@ -27,3 +27,5 @@
 [user]
     name    = Natalie Lillich
     email   = natalie@lifewanted.com
+[push]
+    default = simple
