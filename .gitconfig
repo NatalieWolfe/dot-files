@@ -23,7 +23,7 @@
     ps      = push
     pso     = push origin
     psom    = push origin master
-    cdiff   = diff --color=always
+    ciff    = diff --color=always
 [user]
     name    = Natalie Lillich
     email   = natalie@lifewanted.com
