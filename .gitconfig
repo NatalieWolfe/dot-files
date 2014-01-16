@@ -1,0 +1,29 @@
+[color]
+    branch  = always
+    diff    = auto
+    status  = always
+[color "branch"]
+    current = green
+    local   = blue
+    remote  = red
+[color "status"]
+    header      = dim
+    added       = green
+    changed     = blue
+    untracked   = red
+[alias]
+    st      = status -s
+    ci      = commit
+    cim     = commit -m
+    co      = checkout
+    cob     = checkout -b
+    pl      = pull
+    plo     = pull origin
+    plom    = pull origin master
+    ps      = push
+    pso     = push origin
+    psom    = push origin master
+    cdiff   = diff --color=always
+[user]
+    name    = Natalie Lillich
+    email   = natalie@lifewanted.com
