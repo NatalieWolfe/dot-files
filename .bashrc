@@ -1,4 +1,4 @@
 export PS1="\u@\h:\w$ "
 
-alias ls="ls -l"
+alias ll="ls -l"
 alias less="less -R"
