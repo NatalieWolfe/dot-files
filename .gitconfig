@@ -3,16 +3,18 @@
     diff    = auto
     status  = always
 [color "branch"]
-    current = green
-    local   = blue
+    current = green bold
+    local   = white
     remote  = red
 [color "status"]
     header      = dim
     added       = green
-    changed     = blue
+    changed     = yellow
     untracked   = red
 [alias]
-    st      = status -s
+    b       = branch
+    ball    = branch --all
+    st      = status --short
     ci      = commit
     cim     = commit -m
     co      = checkout
