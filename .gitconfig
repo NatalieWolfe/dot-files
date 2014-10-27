@@ -27,7 +27,7 @@
     psom    = push origin master
     ciff    = diff --color=always
 [user]
-    name    = Natalie Lillich
+    name    = Natalie Wolfe
     email   = natalie@lifewanted.com
 [push]
     default = simple
