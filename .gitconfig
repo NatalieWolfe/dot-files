@@ -12,20 +12,21 @@
     changed     = yellow
     untracked   = red
 [alias]
-    b       = branch
-    ball    = branch --all
-    st      = status --short
-    ci      = commit
-    cim     = commit -m
-    co      = checkout
-    cob     = checkout -b
-    pl      = pull
-    plo     = pull origin
-    plom    = pull origin master
-    ps      = push
-    pso     = push origin
-    psom    = push origin master
-    ciff    = diff --color=always
+    b           = branch
+    ball        = branch --all
+    st          = status --short
+    ci          = commit
+    cim         = commit -m
+    co          = checkout
+    cob         = checkout -b
+    pl          = pull
+    plo         = pull origin
+    plom        = pull origin master
+    ps          = push
+    pso         = push origin
+    psom        = push origin master
+    ciff        = diff --color=always
+    undo-commit = reset --soft HEAD~1
 [user]
     name    = Natalie Wolfe
     email   = natalie@lifewanted.com
