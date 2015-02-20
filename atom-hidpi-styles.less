@@ -1,0 +1,141 @@
+@ui-font-size: 26px;
+@ui-line-height: @ui-font-size * 1.15;
+
+body {
+    font-size: @ui-font-size;
+}
+
+.status-bar {
+  font-size: @ui-font-size;
+  height: @ui-font-size * 2;
+  line-height: @ui-font-size * 1.5;
+}
+
+.tab-bar {
+    height: @ui-font-size * 1.6;
+}
+
+.tab-bar .tab, .tab-bar .tab.active {
+    max-width: @ui-font-size * 8;
+    line-height: @ui-line-height;
+
+    &, &::after, &::before {
+        font-size: @ui-font-size;
+        height: @ui-font-size * 1.25;
+    }
+}
+
+.tab-bar .tab .close-icon::before {
+    font-size: @ui-font-size * 0.7;
+}
+
+.tree-view-resizer {
+    min-width: @ui-font-size * 12;
+}
+
+.tree-view {
+  font-size: @ui-font-size;
+
+  & .entries .entry {
+      min-height: @ui-line-height;
+  }
+}
+
+.section .section-container {
+    & .section-heading {
+        font-size: @ui-font-size * 1.25;
+
+        &::before {
+            font-size: @ui-font-size;
+            width: @ui-font-size;
+            height: @ui-font-size;
+        }
+    }
+}
+
+.settings-view {
+    & .config-menu {
+        min-width: @ui-font-size * 10;
+    }
+
+    & .button-area .btn {
+        font-size: @ui-font-size * 0.7;
+        line-height: @ui-line-height;
+        height: @ui-font-size * 1.5;
+    }
+
+    & .section-container {
+        max-width: none;
+    }
+
+    & .settings-panel {
+        & .control-group + .control-group {
+            margin-top: @ui-font-size * 0.75;
+        }
+
+        & label {
+            font-size: @ui-font-size;
+            line-height: @ui-line-height;
+        }
+
+        & .setting-description {
+            font-size: @ui-font-size * 0.7;
+        }
+    }
+
+    & input[type="checkbox"] {
+        border-radius: @ui-font-size * 0.2;
+    }
+
+    & .checkbox {
+        font-size: @ui-font-size;
+        line-height: @ui-line-height;
+
+        & .setting-title {
+            margin-left: @ui-font-size * 0.25;
+        }
+    }
+
+    & .form-control {
+        font-size: @ui-font-size;
+        height: @ui-font-size * 2;
+    }
+
+    & .editor-container {
+        height: @ui-font-size * 1.5;
+
+        & .editor.mini {
+            font-size: @ui-font-size;
+            height: @ui-font-size * 1.5;
+            max-height: @ui-font-size * 1.5;
+            line-height: @ui-font-size * 1.45;
+        }
+    }
+}
+
+.modal .modal.overlay.from-top {
+    width: @ui-font-size * 32;
+    min-height: @ui-font-size * 5;
+
+    & .command-palette {
+        & .editor.mini {
+            font-size: @ui-font-size;
+            height: @ui-font-size * 1.5;
+            max-height: @ui-font-size * 1.5;
+            line-height: @ui-font-size * 1.45;
+        }
+    }
+
+    & .list-group {
+        max-height: @ui-font-size * 30;
+    }
+
+    & .list-group .event .pull-right .key-binding {
+        font-size: @ui-font-size * 0.7;
+    }
+
+}
+
+.editor .gutter {
+    margin-right: 5px;
+}
