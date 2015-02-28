@@ -6,27 +6,49 @@ body {
 }
 
 .status-bar {
-  font-size: @ui-font-size;
-  height: @ui-font-size * 2;
-  line-height: @ui-font-size * 1.5;
+    font-size: @ui-font-size;
+    height: @ui-font-size * 2;
+    line-height: @ui-font-size * 1.5;
 }
 
 .tab-bar {
-    height: @ui-font-size * 1.6;
+    height: @ui-font-size * 3.25;
+    padding-left: @ui-font-size;
+    padding-right: @ui-font-size / 2;
+
+    &::after {
+        height: @ui-line-height / 2.5;
+    }
 }
 
-.tab-bar .tab, .tab-bar .tab.active {
-    max-width: @ui-font-size * 8;
-    line-height: @ui-line-height;
+.tab-bar .tab,
+.tab-bar .tab.active {
+    top: @ui-font-size * 0.6;
+    margin: 0 @ui-font-size;
+    max-width: @ui-font-size * 12.5;
+    line-height: @ui-line-height * 1.75;
 
-    &, &::after, &::before {
+    &, &::before, &::after {
         font-size: @ui-font-size;
-        height: @ui-font-size * 1.25;
+        height: @ui-font-size * 2.25;
+    }
+
+    &::before, &::after {
+        margin: 0 -@ui-font-size / 2;
+        width: @ui-font-size * 2;
     }
 }
 
 .tab-bar .tab .close-icon::before {
-    font-size: @ui-font-size * 0.7;
+    font-size: @ui-font-size * 0.9;
+    line-height: @ui-font-size * 2;
+}
+
+.tab-bar .tab.modified .close-icon::before {
+    top: @ui-font-size * 0.9;
+    width: @ui-font-size / 1.5;
+    height: @ui-font-size / 1.5;
+    border-width: @ui-font-size / 8;
 }
 
 .tree-view-resizer {
@@ -134,8 +156,4 @@ body {
         font-size: @ui-font-size * 0.7;
     }
 
-}
-
-.editor .gutter {
-    margin-right: 5px;
 }
