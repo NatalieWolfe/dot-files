@@ -77,6 +77,13 @@ body {
             height: @ui-font-size;
         }
     }
+
+    & .list-nested-item.expanded > .entries > .file.entry {
+        &, &::before {
+            line-height: @ui-line-height * 1.3;
+            height: @ui-line-height * 1.4;
+        }
+    }
 }
 
 .section .section-container {
