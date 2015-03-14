@@ -180,3 +180,15 @@ body {
     }
 
 }
+
+.tool-panel.panel-bottom .project-find {
+    & .editor-container .editor.mini {
+        font-size: @ui-font-size * 1.05;
+        line-height: @ui-line-height * 1.25;
+        overflow: visible;
+
+        & #shadow-root .editor-contents--private {
+            height: @ui-line-height * 2;
+        }
+    }
+}
