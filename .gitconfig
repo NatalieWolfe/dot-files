@@ -25,7 +25,7 @@
     ps          = push
     pso         = push origin
     psom        = push origin master
-    ciff        = diff --color=always
+    ciff        = diff --color=always --ws-error-highlight=all
     undo-commit = reset --soft HEAD~1
 [user]
     name    = Natalie Wolfe
